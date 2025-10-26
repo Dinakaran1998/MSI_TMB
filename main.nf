@@ -13,7 +13,7 @@ params.vcf     = "s3://aws-batch-input-bioinformatics/data/TRBOGG.hard-filtered.
 
 process MSI_ANALYSIS {
     
-    container "539323004046.dkr.ecr.us-east-1.amazonaws.com/msi:latest"
+    container "<aws_account_id>.dkr.ecr.us-east-1.amazonaws.com/msi:latest"
     tag "${bam.simpleName}"
     
 
@@ -43,7 +43,7 @@ process MSI_ANALYSIS {
 }
 
 process TMB_CALCULATION {
-    container '539323004046.dkr.ecr.us-east-1.amazonaws.com/tmb-micromamba:latest'
+    container '<aws_account_id>.dkr.ecr.us-east-1.amazonaws.com/tmb-micromamba:latest'
     
     input:
     path vcf
