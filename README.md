@@ -19,9 +19,6 @@ This pipeline automates:
 * MSI scoring using **MSIsensor-pro**
 * TMB calculation using **VCF-based workflows** (vcf2maf or custom scripts)
 
-
-> ⚠️ This pipeline is **DNA-based**. RNA-seq or scRNA-seq data will not provide reliable MSI or TMB results.
-
 ---
 
 ## ⚙️ Prerequisites
